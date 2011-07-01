@@ -1,6 +1,6 @@
 <?php
 
-class UploadManager2 {
+class UploadManager {
 
     // 画像ファイルがあるディレクトリ
     public $image_dir;
