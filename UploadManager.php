@@ -271,3 +271,30 @@ class UploadManager {
 
 
 }
+
+
+/*
+
+  // インスタンスを作成
+  $uploader = new UploadManager($req, $image_dir, $file_name, $ext, $prefix, $suffix);
+
+  // リメイクしてシリアル番号を発行
+  $uploader->remakeTmpImage( $id );
+
+  // 古い一時ファイルを削除
+  $uploader->deleteTmpFile();
+
+  // 一時ファイル名
+  $uploader->reqTmpFileValue();
+
+  // file属性の名前
+  <input type="file" name="[% $uploader->buildReqFileName() %]" />
+
+  // シリアル番号と一時ファイル名をhiddenに設定
+  <input type="hidden" name="[% $uploader->buildReqSerialName() %]" value="[% $uploader->reqSerialValue() %]" />
+  <input type="hidden" name="[% $uploader->buildReqTmpFileName() %]" value="[% $uploader->reqTmpFileValue() %]" />
+
+  // アップロードされた一時ファイルを保存する
+  $uploader->uploadTmpImage();
+
+*/
